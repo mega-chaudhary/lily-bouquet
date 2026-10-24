@@ -1,0 +1,27 @@
+.bouquet {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.bouquet canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* subtle bloom under the sharp characters */
+.bouquet__glow {
+  filter: blur(7px) brightness(1.25);
+  opacity: 0.45;
+}
+
+.bouquet__main {
+  mix-blend-mode: screen;
+}
